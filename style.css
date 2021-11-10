@@ -15,4 +15,19 @@ h1{color:grey;font-family:verdana}
     left: 50%;
     position: fixed;
     transform: translate(-50%, -50%);
+    box-sizing: border-box;
+min-height: 100px;
+overflow: hidden;
 }
+
+.child {
+//background-color: #FFFF00;
+width: 400px;
+//height: 150px;
+padding-left: 20%;
+line-height: 20px;
+//box-sizing: border-box;
+
+}
+
+

@@ -31,14 +31,16 @@ function compute()
 
     if (principal <=0)
     {
-    	alert ("Please enter amount greater than 0");
+    	alert ("Please enter amount greater than 0.", title="Amount error");
         document.getElementById("principal").focus();
 	document.getElementById("principal").value = "";
+	document.getElementById("result").innerHTML= "";
         return false;
     }
     
 // Amount validation ends
 
-	document.getElementById("result").innerHTML="If you deposit <b>"+ principal +"</b>,\<br\>at an interest rate of <b>"+ document.getElementById("rate").value +"</b>,\<br\>You will receive an amount of <b>" + interest +"</b>,\<br\>in the year <b>"+ year +"</b>\<br\>";
+	document.getElementById("result").innerHTML="If you deposit <b><mark>"+ principal +"</mark></b>,\<br\>at an interest rate of <b><mark>"+ document.getElementById("rate").value +" % </mark></b>,\<br\>You will receive an amount of <b><mark>" + interest +"</mark></b>,\<br\>in the year <b><mark>"+ year +"</mark></b>\<br\>";
+
 }
 // ***********************************************************************************
