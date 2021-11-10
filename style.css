@@ -30,4 +30,18 @@ line-height: 20px;
 
 }
 
+label {
+    font-weight:bold;
+    width:100px;
+    clear:left;
+    text-align:left;
+    padding-right:10px;
+}
 
+select, input, label {
+float:left;
+}
+
+input {
+    width: 100px;
+}
