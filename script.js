@@ -7,12 +7,14 @@ JavaScript Functions by Shahnawaz Khan
 ***************************************
 ***************************************
 ****************************************/
-//displaying selected rate on the slider dynamically on the webpage
+
+
+//displaying selected rate on the slider dynamically
 
 function updateRate() 
 {
     var rateval = document.getElementById("rate").value;
-    document.getElementById("rate_val").innerText=rateval;
+    document.getElementById("rate_val").innerText=rateval + " %";
 }
 
 // ***** Below steps will be executed upon clicking Compute Interest button ********
@@ -38,7 +40,9 @@ function compute()
     
 // Amount validation ends
 
-	document.getElementById("result").innerHTML="If you deposit <b><mark>"+ principal +"</mark></b>,\<br\>at an interest rate of <b><mark>"+ document.getElementById("rate").value +" % </mark></b>,\<br\>You will receive an amount of <b><mark>" + interest +"</mark></b>,\<br\>in the year <b><mark>"+ year +"</mark></b>\<br\>";
+// Below command will display the output with highlighted key numbers in yellow
+
+	document.getElementById("result").innerHTML="If you deposit <b><mark>"+ principal +"</mark></b>,\<br\>at an interest rate of <b><mark>"+ Number(document.getElementById("rate").value).toFixed(2) +" % </mark></b>,\<br\>You will receive an amount of <b><mark>" + interest +"</mark></b>,\<br\>in the year <b><mark>"+ year +"</mark></b>\<br\>";
 
 }
 // ***********************************************************************************
