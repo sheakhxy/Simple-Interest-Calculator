@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<!-- This is part of a project under IBM Cloud developer course -->
-<!-- Design enhancements are done by Shahnawaz Khan -->
 <html>
     <head>
     <script src="script.js"></script>
@@ -13,14 +11,14 @@
 
 	<div class="child">
 
-        <b>Amount</b> <input type="number"  id="principal">  <br/>
-        <b>Interest Rate </b> <input type="range"  id="rate" min=1 max=20 value=10.25 onchange=updateRate()>
+        <label>Amount</label> <input type="number"  id="principal">  <br/>
+        <label>Interest Rate </label> <input type="range"  id="rate" min=1 max=20 step="0.25" value="10.25" onchange=updateRate()>
 
 	<span id="rate_val">
-		10.25%
+	10.25%
 	</span><br/>
 
-        <b>No. of years</b><select id="years">
+        <label>No. of years</label><select id="years">
     				<option value="1">1</option>
 		    		<option value="2">2</option>
 				<option value="3">3</option>
@@ -31,7 +29,7 @@
 				<option value="8">8</option>
 				<option value="9">9</option>
 				<option value="10">10</option>
-			</select> </br>
+			</select> </br></br>
         
        	<button onclick="compute()">Compute Interest</button>
 
@@ -49,4 +47,3 @@
 
     </body>
 </html>
-
