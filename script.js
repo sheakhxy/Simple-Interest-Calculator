@@ -7,9 +7,7 @@ JavaScript Functions by Shahnawaz Khan
 ***************************************
 ***************************************
 ****************************************/
-
-
-//displaying selected rate on the slider dynamically
+//displaying selected rate on the slider dynamically on the webpage
 
 function updateRate() 
 {
